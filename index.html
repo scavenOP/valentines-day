@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Drag Papers ❤️</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <audio id="myAudio" controls  style="display:none;">
+      <source src="audio.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+  </audio>
+    <!-- partial:index.partial.html -->
+    <!-- A pen by Developer Rahul  -->
+    <div id="page0" class="page0">
+      <button id="click">Click Me</button>
+    </div>
+    <div id="page1" class="page1">
+      <div id="sec1"  class="paper1 heart">
+        <p>Click Me !</p>
+      </div>
+
+      <div class="paper image">
+        <p>and I fallen in</p>
+        <p>Love with You 😍</p>
+        <img src="images/1.jpeg" />
+      </div>
+
+      <div class="paper image" style="width: 30%">
+        <p>but apke upar</p>
+        <p>hum to pighal gaye 🙈</p>
+
+        <img src="images/4.jpeg" />
+      </div>
+
+      <div class="paper image">
+        <p>and</p>
+        <p>Dramebazz ❤️ ..........</p>
+
+        <img src="images/2.jpeg" />
+      </div>
+
+      <div class="paper image">
+        <p>How can be</p>
+        <p>someone so cute ❤️</p>
+
+        <img src="images/3.jpeg" />
+      </div>
+
+      <div class="paper red">
+        <p class="p1">and My Favorite</p>
+        <p class="p2">Person 😍</p>
+      </div>
+
+      <div class="paper">
+        <p class="p1">You are Cute</p>
+        <p class="p1">Amazing <span style="color: red !important">❤️</span></p>
+      </div>
+
+      <div class="paper">
+        <p class="p1">Drag the papers to move!</p>
+      </div>
+    </div>
+
+
+
+    <div id="sec2" class="page2">
+      <div class="valentines-day-card">
+        <input id="open" type="checkbox">
+        <label class="open" for="open"></label>
+      <div class="card-front">
+        <div class="note">Click to Open</div>
+      </div>
+        
+        <div class="card-inside">
+          <div class="text-one">Happy
+          </div>
+          <div class="heart1"></div>
+          <div class="smile"></div>
+          <div class="eyes"></div>
+      </div>
+      </div>
+    </div>
+    <!-- partial -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+
+        
+        // Add an event listener to the div you want to click
+        document.getElementById('sec1').addEventListener('click', function() {
+          // Get the target div by its ID
+          var sec1 = document.getElementById('page1');
+          var sec2 = document.getElementById('sec2');
+          // Scroll to the target div smoothly
+          sec1.style.display = 'none';
+          sec2.style.display = 'flex';
+        });
+        document.getElementById('click').addEventListener('click', function() {
+          var audio = document.getElementById('myAudio');
+          audio.currentTime = 17;
+            audio.play();
+          var sec0 = document.getElementById('page0');
+          var sec1 = document.getElementById('page1');
+          // Scroll to the target div smoothly
+          sec0.style.display = 'none';
+          sec1.style.display = 'flex';
+        });
+      });
+    </script>
+    <script src="./mobile.js"></script>
+  </body>
+</html>
