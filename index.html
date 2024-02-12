@@ -71,8 +71,8 @@
     <div id="sec2" class="page2">
       <div class="valentines-day-card">
         <input id="open" type="checkbox">
-        <label class="open" for="open"></label>
-      <div class="card-front">
+        <label class="open" for="open" onclick="confetti()"></label>
+      <div class="card-front" onclick="confetti()">
         <div class="note">Click to Open</div>
       </div>
         
@@ -111,6 +111,7 @@
         });
       });
     </script>
-    <script src="./mobile.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   </body>
 </html>
